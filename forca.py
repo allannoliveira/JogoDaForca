@@ -1,28 +1,27 @@
 def jogar():
     print('Jogando....')
-    
-    palavra = 'Python'
+
+    palavra = 'banana'
+    letras_acertadas = ["_", "_", "_", "_", "_", "_"]
 
     enforcou = False
     acertou = False
 
-    while(not enforcou and not acertou):
+    while not enforcou and not acertou:
         chute = input('Qual a letra ?')
+        chute = chute.strip()
 
         letra = palavra.find(chute)
 
-        index = 1
-
-        for letra in palavra:
-            if chute == letra:
-                print("Encontrei a letra {} na posicao {}".format(letra, index))
-            index = index + 1
-
-
+        index = 0
         
+        for letra in palavra:
+            if chute.upper() == letra.upper():
+                letras_acertadas[index] = letra
+            index = index + 1
+            print(letras_acertadas)
+            
+                
 
-
-
-
-if (__name__  == '__main__'):
+if __name__ == '__main__':
     jogar()
