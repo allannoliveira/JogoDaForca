@@ -1,0 +1,10 @@
+banana
+pera
+maca
+uva
+python
+boneca
+carro
+navio
+moto
+futebol
