@@ -54,7 +54,17 @@ def jogar():
         print(letras_acertadas)
 
     if acertou:
-        print('Parabens! Você ganhou ") ')
+        print("""Parabéns, você ganhou!
+               ___________      
+              '._==_==_=_.'     
+              .-\:      /-.    
+             | (|:.     |) |    
+              '-|:.     |-'     
+                \::.    /      
+                 '::. .'        
+                   ) (          
+                 _.' '._        
+                '-------'       """)
     else:
         print('Não desanime, tente outra vez. ')
 
